@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Quadri Creation</title>
+	<meta http-equiv="refresh" content="9.5,URL='index.html'"/>
+	<style type="text/css">
+		body
+		{
+			background-color: black;
+		}
+		#logo
+		{
+			font-family: Impact;
+			font-size: 800%;
+			color: red;
+			position: relative;
+			top: 50px;
+			left: 350px;
+			animation-name: logo;
+		}
+		#welcome
+		{
+			color: red;
+			font-size: 300%;
+			left: 150px;
+			font-family: Impact;
+			animation-name: qc;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+		}
+		#main
+		{
+			position: absolute;
+			top: 250px;
+			left: 550px;
+		}
+		#loading
+		{
+			height: 50px;
+			width: 500px;
+			border-radius: 10px;
+			background-image: linear-gradient(to left,red,black);
+			animation-name: loadingbar;
+			animation-duration: 10s;
+			animation-iteration-count: 1;
+		}
+		@keyframes loadingbar
+		{
+			0%{width: 0px;}
+			100%{width: 500px;}
+		}
+		#completion
+		{
+			color: white;
+			font-size: 20px;
+			font-family: Impact;
+			position: absolute;
+			left: 320px;
+			animation-name: completion;
+			animation-duration: 11s;
+			animation-iteration-count: 1;
+			text-decoration: none;
+		}
+		.motto
+		{
+			font-size:180%;
+			color: white;
+			position: relative;
+			left: 5px;
+			font-family: Impact;
+		}
+	</style>
+</head>
+<body><div id="main"><font id="welcome">Quadri <font style="color: white;">Creation</font></font>
+<br><font class="motto">FASHION YOU'LL FALL IN LOVE WITH</font><br><br><div id="loading"></div>
+<br><br>
+</div>
+</body>
+</html>

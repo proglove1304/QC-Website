@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let us know about you</title>
+	<style type="text/css">
+		.navbar
+		{
+			height: 100px;
+			width: 100%;
+			background-image: linear-gradient(to right,white,black);
+		}
+		.links
+		{
+			position: absolute;
+			float: left;
+			font-size: 35px;
+			top: 15px;
+			left: 10px;
+			font-family: Impact;
+		}
+		.logo
+		{
+			font-family:Impact;
+			font-size: 40px;
+			color: red;
+		}
+		a
+		{
+			text-decoration: none;
+			color: black;
+		}
+		.heading
+		{
+			font-size: 40px;
+			font-weight: bold;
+			font-family: Impact;
+			color: white;
+		}
+		.frame
+		{
+			border:8px solid red;
+			border-radius: 50%;		
+			width: 50%;
+			color: white;
+			position: relative;
+			left: 350px;
+			top: 50px;
+		}
+		.formtext
+		{
+			font-size: 25px;
+			font-family: Candara;
+		}
+		.box
+		{
+			height: 30px;
+			width: 250px;
+			border:1px solid red;
+		}
+		.submitbutton
+		{
+			height: 40px;
+			width: 100px;
+			background-color: black;
+			color: white;
+			border-radius: 40px;
+		}
+		.conoffieldset
+		{
+			text-align: center;
+		}
+		.NaM
+		{
+			color: white;
+			font-family: Impact;
+			text-decoration: none;
+			font-size: 30px;
+		}
+	</style>
+	<script type="text/javascript">
+		function home()
+		{
+			var uname= document.getElementById('uname');
+			var pwd= document.getElementById('pwd');
+			if(uname.value=='' && pwd.value=='')
+			{
+				alert("Enter ID and Password");	
+			}
+			else
+			{
+				alert("Welcome "+uname.value);
+			}
+		}
+		
+
+	</script>
+</head>
+<body bgcolor="black">
+<div class="navbar"><table class="links" cellspacing="20px;">
+<tr>
+<td><a href="index.html">Home</a></td>
+<td><a href="timings.html">Timings</a></td>
+<td><a href="login.html" style="color: red;">Login</a></td>
+<td><a href="about.html">About</a></td>
+</tr>
+</table>
+<div style="position: relative;float: right;top: 10px;right: 20px;"><font class="logo">Quadri <font style="color: white;">Creation</font></font><br><font style="color: white;font-family: Impact;font-size: 18px;"	>One stop for all <font color="red">your FASHION needs</font></font></div></div>
+
+	<form>
+		<fieldset class="frame">
+		<legend class="heading">Login</legend>
+		<div class="conoffieldset">
+			<br><font class="formtext">Name : <input class="box" id="uname" type="text" name="name" placeholder="Enter Name Here" style="margin-left: 100px;">
+			<br><br>
+			Password : <input class="box" id="pwd" type="password" name="pwd" placeholder="Enter Password Here" style="margin-left: 58px;">
+			<br><br><a href="register.html" class="NaM">NOT A MEMBER??</a>
+			<br><br>
+			<input type="button" name="submit" onclick="home()" value="SUBMIT" class="submitbutton">
+			</font>
+			</div>
+		</fieldset>
+	</form>
+
+</body>
+</html>

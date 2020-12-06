@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timings</title>
+	<style type="text/css">
+		.navbar
+		{
+			height: 100px;
+			width: 100%;
+			background-image: linear-gradient(to right,white,black);
+		}
+		.links
+		{
+			position: absolute;
+			float: left;
+			font-size: 35px;
+			top: 15px;
+			left: 10px;
+			font-family: Impact;
+		}
+		a
+		{
+			text-decoration: none;
+			color: black;
+		}
+		.logo
+		{
+			font-family:Impact;
+			font-size: 40px;
+			color: red;
+		}
+		.headings
+		{
+			font-size: 30px;
+		}
+		.day
+		{
+			color: white;
+			font-size: 30px;
+			font-family: Curlz MT;
+			position: relative;
+			top: 45px;
+		}
+		.time
+		{
+			display: none;
+		}
+		.day:hover .time
+		{
+			display: inline-block;
+			color: red;
+		}
+		.maindiv
+		{
+			position: relative;
+			top: 40px;
+			left: 30%;
+			border:10px solid red;
+			text-align: center;
+			height: 350px;
+			width: 40%;
+			border-radius: 10%;
+		}
+		.heading
+		{
+			font-family: Curlz MT;
+			font-size: 50px;
+			color: white;
+			position: relative;
+			left: 30%;
+			top: 30px;
+			width: 40%;
+			text-align: center;
+			font-weight: bolder;
+			animation-name: timings;
+			animation-iteration-count: infinite;
+			animation-duration: 5s;
+		}
+		@keyframes timings
+		{
+			50%{color: orange};
+		}
+	</style>
+</head>
+<body bgcolor="black">
+<div class="navbar"><table class="links" cellspacing="20px;">
+<tr>
+<td><a href="index.html">Home</a></td>
+<td><a href="timings.html" style="color: red;">Timings</a></td>
+<td><a href="login.html">Login</a></td>
+<td><a href="about.html">About</a></td>
+</tr>
+</table>
+<div style="position: relative;float: right;top: 10px;right: 20px;"><font class="logo">Quadri <font style="color: white;">Creation</font></font><br><font style="color: white;font-family: Impact;font-size: 18px;"	>One stop for all <font color="red">your FASHION needs</font></font></div></div>
+<div class="heading">Timings</div>
+<div class="maindiv">
+<div class="day">Monday <div class="time"> 11:00 AM - 9:00 PM</div></div>
+<div class="day">Tuesday <div class="time"> 11:00 AM - 9:00 PM</div></div>
+<div class="day">Wednesday <div class="time"> 11:00 AM - 9:00 PM</div></div>
+<div class="day">Thursday <div class="time"> 11:00 AM - 9:00 PM</div></div>
+<div class="day">Friday <div class="time"> 11:00 AM - 9:00 PM</div></div>
+<div class="day">Saturday <div class="time"> 11:00 AM - 9:00 PM</div></div>
+<div class="day">Sunday <div class="time"> 11:00 AM - 6:00 PM</div></div>
+</div>
+</body>
+</html>
